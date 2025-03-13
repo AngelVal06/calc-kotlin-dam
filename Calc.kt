@@ -1,3 +1,4 @@
+
 fun main(args: Array) {
 <<<<<<< HEAD
        val (operation, num1, num2) = parseArguments(args)
@@ -12,15 +13,20 @@ fun main(args: Array) {
     val result = when (operation) {
         "multiplica" -> multiplica(num1, num2)
 <<<<<<< HEAD
+<<<<<<< HEAD
         "suma" -> suma(num1, num2)
 =======
         "resta" -> resta(num1, num2)
 >>>>>>> feature/resta
+=======
+        "divide" -> divideE(num1, num2)
+>>>>>>> 5303c8bf9ceecd1aa857f969a8e75a1d00d06f67
         else -> throw IllegalArgumentException("Operación no soportada")
     }
     showResult(operation, result)
 >>>>>>> feature/suma
 }
+
 
 fun parseArguments(args: Array): Triple {
     if (args.size != 3) {
@@ -42,6 +48,7 @@ fun showResult(operation: String, result: Int) {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 fun divide(num1: Int, num2: Int): Int {
     if (num2 == 0) {
         throw IllegalArgumentException("Error: No se puede dividir por cero")
@@ -55,4 +62,8 @@ fun suma(num1: Int, num2: Int): Int {
 fun resta(num1: Int, num2: Int): Int {
     return num1 - num2
 >>>>>>> feature/resta
+=======
+fun divideE(num1: Int, num2: Int): Int {
+    return num1 / num2
+>>>>>>> 5303c8bf9ceecd1aa857f969a8e75a1d00d06f67
 }
